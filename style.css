@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+}
+
+header {
+    height: 2160px;
+    width: 100%;
+    background-image: url(Images/Background.png);
+    background-size:cover;
+    background-attachment: scroll;
+}
+
+.icon {
+    color: aliceblue;
+    font-size: 0.5cm;
+    margin-top: -.235ex;
+    vertical-align: middle;
+}
+
+.navbar {
+    position: absolute;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.navbar a {
+    color: aliceblue;
+    font-size: 0.5cm;
+}
+
+.navbar .Logo {
+    font-size: 1.2cm;
+}
+
+.Highlight {
+    color:blueviolet;
+    text-shadow: 0 0 10px;
+}
+
+.navbar .navLinks {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .navLinks ul {
+    display: flex;
+}
+
+.navbar .navLinks ul li {
+    margin: 0 25px;
+}
+
+.navbar .navLinks ul li.active a {
+    color: blueviolet;
+    text-shadow: 0 0 10px;
+    font-weight: 600;
+}
+
+.navbar .navLinks ul li a:hover {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #9600e6, 0 0 40px #50035f, 0 0 50px #3b0444, 0 0 60px #500742, 0 0 70px #2c0235;
+    transition: all 0.3s ease;
+}
+
+#Fuse {
+    position: absolute;
+    top: 350px;
+    right: 0px;
+    width: 400px;
+}
+
+#Saturn {
+    position: absolute;
+    top: 725px;
+    left: 10px;
+    width: 450px;
+}
+
+#Text {
+    color: aliceblue;
+    font-size: 1cm;
+    position: relative;
+    left: 150px;
+    top: 325px;
+    max-width: fit-content;
+}
+
+#Intro {
+    color: aliceblue;
+    font-size: 1cm;
+    position: relative;
+    left: 900px;
+    top: 725px;
+    max-width: fit-content;
+}
+
+.navbar .Menu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 40px;
+}
+
+.baspage {
+    position: absolute;
+    padding-left: 50px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #110024;
+    box-sizing: border-box;
+    align-items: center;
+    display: flex;
+}
+
+.baspage ul {
+    display: flex;
+    color:aliceblue;
+    padding-bottom: 30px;
+    padding-left: 10vw;
+    padding-right: 35vw;
+}
+
+.baspage ul li {
+    margin: 0 20px;
+}
+
+@media screen and (max-width: 970px) {
+    .navbar {
+        padding: 0;
+    }
+
+    #Text {
+        color: aliceblue;
+        font-size: 0.4cm;
+        position: absolute;
+        padding: 50px;
+        padding-top: 150px;
+    }
+
+    #Fuse {
+        position: absolute;
+        top: 150px;
+        right: 0px;
+        width: 100px;
+    }
+
+    #Saturn {
+    position: absolute;
+    top: 250px;
+    left: 10px;
+    width: 150px;
+    }
+    
+    .navbar .Logo {
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        font-size: 0.7cm;
+    }
+    
+    .navbar .Menu {
+        display: block;
+        z-index: 9999;
+    }
+
+    .navLinks {
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(169, 169, 169, 0.39);
+        backdrop-filter: blur(7px);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 200% ;
+        transition: all 0.5s ease;
+        z-index: 9998;
+    }
+
+    .navLinks.mobile-menu {
+        margin-left: 0;
+    }
+    
+
+    .navLinks ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar .navLinks ul li {
+        margin: 25px 0;
+        font-size: 0.75cm;
+    }
+
+}
